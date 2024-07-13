@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
-  //outle handles conditional swapping between pages.
+  //outler handles conditional swapping between pages.
   return (
     <div>
       <Header />

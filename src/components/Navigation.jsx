@@ -5,7 +5,7 @@ function Navigation() {
     const currentPage = useLocation().pathname;
 
     return(
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-tabs justify-content-center">
         <li className="nav-item">
             <Link
             //check if current page is AboutMe then set to nav-link-active if so, if not nav-link

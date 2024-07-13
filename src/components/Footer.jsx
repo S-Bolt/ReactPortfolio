@@ -1,13 +1,11 @@
-import React from "react";
-import Navigation from "./Navigation";
- 
-const Footer = () => {
-    return(
-        <header>
-            <h1> My Portfolio</h1>
-            <Navigation />
-        </header>
-    );
-};
+import React from 'react';
+
+function Footer() {
+  return (
+    <footer className="text-center py-4">
+      <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+  );
+}
 
 export default Footer;

@@ -38,10 +38,10 @@ function handleSubmit() {
 };
 
 return (
-    <div className="container text-center">
+    <div className="container text-center  p-3 mb-5">
         <h1>Contact Me</h1>
         <form className="form" onSubmit={handleSubmit}>
-            <div className="form-group">
+            <div className="form-group my-3">
                <input 
                value={contactForm.name}
                name="name"
@@ -52,7 +52,7 @@ return (
                />
                 {errors.name && <p className="error-text">{errors.name}</p>}
             </div>
-            <div className="form-group">
+            <div className="form-group my-3">
                <input 
                value={contactForm.email}
                name="email"
@@ -63,7 +63,7 @@ return (
                />
                 {errors.name && <p className="error-text">{errors.email}</p>}
             </div>
-            <div className="form-group">
+            <div className="form-group my-3">
                <textarea
                value={contactForm.message}
                name="message"

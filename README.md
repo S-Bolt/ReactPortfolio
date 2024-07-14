@@ -2,7 +2,7 @@
 
 My personal porfolio website built with React, displaying projects,and contact information
 
-## features
+## Features
 - Responsive design with Bootstrap
 - Navigation bar with active link highlighting
 - Portfolio seciton displaying projects with links to GitHub and demos
@@ -15,3 +15,8 @@ My personal porfolio website built with React, displaying projects,and contact i
 - React Router
 - Bootstrap
 - React Icons
+
+## Live Deployment
+
+Check out my portfolio [here](https://regal-zabaione-c1f6af.netlify.app/).
+

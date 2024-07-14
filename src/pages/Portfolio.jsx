@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Portfolio.css';
 
@@ -46,9 +47,9 @@ function Portfolio() {
                     </a>
                    
                     <div>
-                    <a href={project.githubLink} target="_blank">
-                        GitHub Repository
-                    </a>
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="mx-2">
+                            GitHub  <FaGithub size={20} />
+                        </a>
                     </div>
                 </div>
             ))}

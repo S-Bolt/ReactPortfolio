@@ -6,7 +6,7 @@
 
 .contact-content {
   
-    margin: auto; /* Center the container */
+    margin: auto; 
     display: flex; 
     flex-direction: column;
     justify-content: space-between; 
@@ -32,7 +32,7 @@
     align-items: center; 
     text-align: center; 
     margin-top: 0px;
-    gap: 10px; 
+   
 }
 
 .resume-logo {

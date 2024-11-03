@@ -14,24 +14,10 @@ function Portfolio() {
 
     },
     {
-        title: 'Project 2',
-        image: '/project-2.jpg',
-        deployedLink: 'deloployed-link.com',
-        githubLink: 'https://github.com/S-Bolt/TextEditor',
-
-    },
-    {
-        title: 'Project 3',
-        image: '/project-3.jpg',
-        deployedLink: 'deloployed-link.com',
-        githubLink: 'https://github.com/S-Bolt/OriolesThemedBlog',
-
-    },
-    {
-        title: 'Project 4',
-        image: '/project-4.jpg',
-        deployedLink: 'deloployed-link.com',
-        githubLink: 'https://github.com/S-Bolt/ReactPortfolio',
+        title: 'WeatherApp',
+        image: '/WeatherAppPhoto.png',
+        deployedLink: 'https://s-bolt.github.io/Weather-Forecast/',
+        githubLink: 'https://github.com/S-Bolt/Weather-Forecast',
 
     },
  ];
@@ -59,8 +45,7 @@ function Portfolio() {
             ))}
         </div>
         {/* Technologies Section */}
-      <div className="technologies mt-5">
-        <h3>Technologies I Use</h3>
+      <div className="technologies">
         <div className="tech-icons">
             <i className="devicon-javascript-plain colored" title="JavaScript" style={{ fontSize: '50px' }}></i>
             <i className="devicon-react-original colored" title="React" style={{ fontSize: '50px' }}></i>

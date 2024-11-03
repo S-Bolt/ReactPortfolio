@@ -1,45 +1,51 @@
-import React from "react";
-import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import './Navigation.css';
 
 function Navigation() {
-    const currentPage = useLocation().pathname;
+    const [isScrolled, setIsScrolled ] = useState(false);
+    
+
+    //Change the translucency of navbar once leaving hero.jsx
+    useEffect(() => {
+        const handleScroll = () => {
+          
+          if (window.scrollY > window.innerHeight) {
+            setIsScrolled(true);
+          } else {
+            setIsScrolled(false);
+          }
+        };
+       
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
 
     return(
-    <ul className="nav nav-tabs justify-content-center">
-        <li className="nav-item">
-            <Link
-            //check if current page is AboutMe then set to nav-link-active if so, if not nav-link
-                to="/"
-                className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-            >
-                About Me
-            </Link>
-        </li>
-        <li className="nav-item">
-            <Link
-                to="/Portfolio"
-                className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
-            >
-                Portfolio
-        </Link>
-        </li>
+    <ul className={`navbar ${isScrolled ? 'navbar-solid' : 'navbar-translucent'}`}>
          <li className="nav-item">
-         <Link
-                to="/Contact"
-                className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
-            >
-                Contact
-        </Link>
-
-        </li>
-        <li className="nav-item">
-        <Link
-                to="/Resume"
-                className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
-            >
-                Resume
-        </Link>
-        </li>
+                <a href="#hero" className="nav-link">
+                    Home
+                </a>
+            </li>
+            <li className="nav-item">
+                <a href="#about-me" className="nav-link">
+                    About Me
+                </a>
+            </li>
+            <li className="nav-item">
+                <a href="#portfolio" className="nav-link">
+                    Portfolio
+                </a>
+            </li>
+            <li className="nav-item">
+                <a href="#contact" className="nav-link">
+                    Contact
+                </a>
+            </li>
     </ul>
     );
 }

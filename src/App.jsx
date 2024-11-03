@@ -1,19 +1,18 @@
-import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
-import Header from './components/Header';
 import Footer from './components/Footer';
+import Navigation from './components/Navigation';
+import Home from './pages/Home';
 
 function App() {
   //outler handles conditional swapping between pages.
   return (
-    <div>
-      <Header />
+    <div className=' bg-black'>
+      <Navigation />
       <main>
-        <Outlet />
+        <Home />
       </main>
       <Footer />
     </div>
   );
-};
+}
 
 export default App;

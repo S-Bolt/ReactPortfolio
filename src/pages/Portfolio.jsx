@@ -47,20 +47,21 @@ function Portfolio() {
         {/* Technologies Section */}
       <div className="technologies">
         <div className="tech-icons">
-            <i className="devicon-javascript-plain colored" title="JavaScript" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-react-original colored" title="React" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-css3-plain colored" title="CSS3" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-bootstrap-plain colored" title="Bootstrap" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-tailwindcss-plain colored" title="Tailwind CSS" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-github-original colored" title="GitHub" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-html5-plain colored" title="HTML5" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-vitejs-plain colored" title="Vite" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-nodejs-plain colored" title="Node.js" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-express-original colored" title="Express.js" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-postgresql-plain colored" title="PostgreSQL" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-mongodb-plain colored" title="MongoDB" style={{ fontSize: '50px' }}></i>
-            <i className="devicon-sequelize-plain colored" title="Sequelize" style={{ fontSize: '50px' }}></i>
-     
+            
+            <i className="devicon-javascript-plain colored neon-icon" title="JavaScript" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-react-original colored neon-icon" title="React" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-css3-plain colored neon-icon" title="CSS3" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-bootstrap-plain colored neon-icon" title="Bootstrap" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-tailwindcss-plain colored neon-icon" title="Tailwind CSS" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-github-original colored neon-icon" title="GitHub" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-html5-plain colored neon-icon" title="HTML5" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-vitejs-plain colored neon-icon" title="Vite" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-nodejs-line-wordmark colored neon-icon" title="Node.js" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-express-original colored neon-icon" title="Express.js" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-postgresql-plain colored neon-icon" title="PostgreSQL" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-mongodb-plain colored neon-icon" title="MongoDB" style={{ fontSize: '50px' }}></i>
+            <i className="devicon-sequelize-plain colored neon-icon" title="Sequelize" style={{ fontSize: '50px' }}></i>
+            
         </div>
       </div>
     </div>

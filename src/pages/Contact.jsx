@@ -47,7 +47,7 @@ return (
                      {/* Resume Download Button */}
                      <div className="resume-container">
                    <img src='/resume.svg' alt="Resume Logo" className="resume-logo" />
-                            <a href="/Sam Bolton's Resume (1).pdf"  download={"Sam Bolton's Resume"} className="btn  mt-3">
+                            <a href="/Resume.pdf"  download={"Sam Bolton's Resume"} className="btn  mt-3">
                                 Download My Resume
                             </a>
                     </div>

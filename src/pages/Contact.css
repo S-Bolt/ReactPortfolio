@@ -1,49 +1,69 @@
-
 .container-contact {
     width: 100%;
-    min-height: 100; 
-}
-
-.contact-content {
-  
+    height: 800px; 
     margin: auto; 
     display: flex; 
-    flex-direction: column;
     justify-content: space-between; 
-    align-items: center; 
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-   
-    
+    align-items: flex start;
 }
 
 .form-container {
     flex: 1; 
-    max-width: 400px; 
-    min-width: 300px;
-    
+    max-width: 50%; 
+    background-color: #01190B;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
 }
 
 .resume-container {
     flex: 1; 
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;  /* Layout children in a column */
+    align-items: center;     /* Center align horizontally */
+    text-align: center;
+    width: fit-content;
     text-align: center; 
-    margin-top: 0px;
-   
+    max-width: 50%; 
+    background-color: #455E4F;
+    position: relative;
+    padding-top: 75px;
+
 }
 
-.resume-logo {
-    width: 300px; 
-    height: auto;
-    max-width: 100%;
+.resume-h2 {
+    margin-bottom: 20px;         /* Space between the title and the button */
+    font-size: 1.8rem; 
 }
 
-.btn {
-    background-color: rgb(109, 175, 197);
+.download.btn {
+    position: relative;
+    background-color: #C0FC95;
     color: black;
+    align-items: center;
+    border-radius: 25px;
+    height: 50px;
+    transition: background-color 0.3s ease;
+    z-index: 1; 
+    margin-top: 245px; /*This value may need altering for responsive design*/
+}
+.download.btn:hover {
+    background-color: #c0fc95a8;
+}
+
+/* Decorative Oval Behind the Button */
+.decorative-oval {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: #051513;
+    border-radius: 50%;
+    z-index: 0;  
+    pointer-events: none; 
 }
 
 .submit {

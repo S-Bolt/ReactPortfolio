@@ -19,7 +19,7 @@ function AboutMe() {
                     </p>
                 </div>
                 <div className="img-container">
-                    <img src="Group 18.png" alt="technologies image" />
+                    <img src="Group 18 (1).png" alt="technologies image" />
                 </div>
          </div>
     );

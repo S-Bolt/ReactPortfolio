@@ -31,7 +31,7 @@ function handleSubmit(e) {
     setErrors(newErrors);
 
     //if newErrors is 0 then the form can be submitted
-    if (Object.value(newErrors).length === 0) {
+    if (Object.values(newErrors).length === 0) {
         console.log('Form sumbitted:', contactForm);
         alert('Message sent!');
 
@@ -41,16 +41,8 @@ function handleSubmit(e) {
 }
 
 return (
-    <div className="container-contact p-3 mb-5">
+    <div className="container-contact mb-5">
         <h2>Contact Me</h2>
-        <div className="contact-content">
-                     {/* Resume Download Button */}
-                     <div className="resume-container">
-                   <img src='/resume.svg' alt="Resume Logo" className="resume-logo" />
-                            <a href="/Resume.pdf"  download={"Sam Bolton's Resume"} className="btn  mt-3">
-                                Download My Resume
-                            </a>
-                    </div>
             <div className="form-container">
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="form-group my-3">
@@ -73,7 +65,7 @@ return (
                     placeholder="Email"
                     className="form-control"
                     />
-                        {errors.name && <p className="error-text">{errors.email}</p>}
+                        {errors.email && <p className="error-text">{errors.email}</p>}
                     </div>
                     <div className="form-group my-3">
                     <textarea
@@ -83,14 +75,20 @@ return (
                     placeholder="Message"
                     className="form-control"
                     />
-                        {errors.name && <p className="error-text">{errors.message}</p>}
+                        {errors.email && <p className="error-text">{errors.message}</p>}
                     </div>
                     <button type="submit" className="btn submit"> Submit</button>
                 </form>
             </div>
 
-        
-        </div>
+            {/* Resume Download Button */}
+            <div className="resume-container">
+                  <h2 className="resume-h2">Resume</h2>
+                    <div className="decorative-oval"></div>
+                            <a href="/Resume.pdf"  download={"Sam Bolton's Resume"} className="download btn">
+                                Download My Resume
+                            </a>
+            </div>
     </div>
 )
 }

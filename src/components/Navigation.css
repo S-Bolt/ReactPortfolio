@@ -5,13 +5,25 @@
     top: 0;
     left: 0;
     z-index: 10;
-    transition: background-color 0.3s ease;
-    justify-content: center;
-    list-style: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: rgba(0, 0, 0, 0.096); 
+}
+
+.logo {
+    font-size: 1.5rem; 
+    color: #c0fc95; 
+    font-family: 'Orbitron', sans-serif; 
+    padding-left: 140px;
+    display: flex; 
+    align-items: center;
+    
 }
 
 .navbar-translucent {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.339); 
     color: white;
 }
 
@@ -19,15 +31,37 @@
     background-color: #000; 
     color: white;
 }
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 4rem; 
+    align-items: center; 
+    padding-right: 10%;
+    padding-top: .5rem;
+    
+}
 .nav-link {
-    color: rgb(109, 175, 197); 
+    color: rgb(251, 252, 252); 
     text-decoration: none; 
-    padding: 10px 15px; 
     transition: color 0.3s; 
 }
 
+a[href="#contact"] {
+    color: #c0fc95; 
+  }
+
 .nav-link:hover {
-    color: #74f0ed; 
+    color: #c0fc95ae; 
 }
 
+@media (max-width: 1200px){
+    .logo {
+        padding-left: 120px; 
+    }
+}
 
+@media (max-width: 1000px){
+    .logo {
+        padding-left: 100px; 
+    }
+}

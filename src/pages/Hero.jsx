@@ -6,11 +6,14 @@ function Hero() {
         <div className="hero">
             <div className="banner">
                 <div className="words">
-                    <p>Hi! My name is...</p>
-                    <h1>Sam Bolton</h1>
-                    <p>Scroll down to learn more.</p>
+                    <h1>SAM BOLTON</h1>
+                    <p>FULL STACK DEVELOPER</p>
+                    <hr className="decorative-hr"></hr>
+                    
                 </div>
-            
+               
+                    <img className="headshot-img" src="Group 13 (3).png" alt="Sam Bolton Headshot" />
+               
             </div>
         </div>
     );

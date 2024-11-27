@@ -1,25 +1,27 @@
+/* eslint-disable react/no-unescaped-entities */
 import './AboutMe.css';
 
 function AboutMe() {
     return (
-        <div className="container-about-me text-right p-3 mb-5">
-            
-            <h2 className="p-3" > About Me</h2>
-            <div className='about-me-text'>
-            <p className="my-3 text-left p-3 mb-5">
-                 Hi! I’m Sam, a full-stack developer with a passion for learning, tinkering, solving problems, and using code to create whatever my mind can conjure. After deciding to make a career change and completing a coding boot camp, I realized that being a developer offers the perfect blend of creativity and technical challenges, allowing me to express myself while building functional applications.
-                <br></br>
-                <br></br>
-                 As a people person, I thrive on collaboration and enjoy working with teams to bring ideas to life. When I’m not coding, you can find me somewhere outdoors, on a hike, playing sand volleyball, or maybe at a baseball game. I’m always excited to connect with fellow developers and collaborate on innovative projects!
-
-            </p>
-        </div>
-         {/* Cool SVG Container */}
-         <div className="svg-container">
-                    <img src="/cool (1).svg" alt="Cool Illustration" className="svg-illustration" />
+            <div className='split-panel'>
+                <div className='about-me-text'>
+                    <h2> 
+                       <span className="highlight-text">Ab</span>out Me
+                    </h2>
+                    <p>
+                        Hi! I’m Sam, a full-stack developer with a passion for learning, tinkering, and coding. This year, I decided it was time for a change and many months later successfully completed a coding boot camp.  The result of that decision is that I became completely hooked on coding.  The satisfaction of bringing an idea to life or the thrill of solving difficult bugs and problems really gets me going.
+                    </p>    
+                    <p>
+                        I enjoy working with others who have the same passion for the craft.  I'm always excited to connect with fellow developers and collaborate and innovative projects.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me enjoying outdoor activities, on a hike, playing sand volleyball, or maybe at a baseball gamee
+                    </p>
                 </div>
-        
-        </div>
+                <div className="img-container">
+                    <img src="Group 18.png" alt="technologies image" />
+                </div>
+         </div>
     );
 }
 

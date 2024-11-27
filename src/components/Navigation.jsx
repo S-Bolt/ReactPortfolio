@@ -25,29 +25,34 @@ function Navigation() {
 
 
     return(
-    <ul className={`navbar ${isScrolled ? 'navbar-solid' : 'navbar-translucent'}`}>
-         <li className="nav-item">
-                <a href="#hero" className="nav-link">
-                    Home
-                </a>
-            </li>
-            <li className="nav-item">
-                <a href="#about-me" className="nav-link">
-                    About Me
-                </a>
-            </li>
-            <li className="nav-item">
-                <a href="#portfolio" className="nav-link">
-                    Portfolio
-                </a>
-            </li>
-            <li className="nav-item">
-                <a href="#contact" className="nav-link">
-                    Contact
-                </a>
-            </li>
-    </ul>
-    );
+      <nav className={`navbar ${isScrolled ? 'navbar-solid' : 'navbar-translucent'}`}>
+      <div className="logo">
+          SB
+      </div>
+      <ul className="nav-links">
+          <li className="nav-item">
+              <a href="#hero" className="nav-link">
+                  Home
+              </a>
+          </li>
+          <li className="nav-item">
+              <a href="#about-me" className="nav-link">
+                  About Me
+              </a>
+          </li>
+          <li className="nav-item">
+              <a href="#portfolio" className="nav-link">
+                  Portfolio
+              </a>
+          </li>
+          <li className="nav-item">
+              <a href="#contact" className="nav-link">
+                  Contact
+              </a>
+          </li>
+      </ul>
+  </nav>
+);
 }
 
 export default Navigation;

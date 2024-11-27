@@ -1,15 +1,25 @@
-import { useState} from "react";
+import { useEffect, useState} from "react";
 import './Contact.css';
 
 
  //Setting useState and setContactForm function to change state
 function Contact() {
+    const [bottomRowCircles, setBottomRowCircles] = useState([]);
+    const [secondBottomRowCircles, setSecondBottomRowCircles] = useState([]);
+    const [columnCircles,setColumnCircles] = useState([])
     const [contactForm , setContactForm ] = useState({
         name: '', 
         email: '', 
         message: ''
     });
     const [errors, setErrors]= useState({});
+
+    //for generating circles
+    useEffect(() => {
+        setBottomRowCircles(Array(5).fill(0));
+        setSecondBottomRowCircles(Array(5).fill(0));
+        setColumnCircles(Array(7).fill(0));
+    }, []);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -42,8 +52,28 @@ function handleSubmit(e) {
 
 return (
     <div className="container-contact mb-5">
-        <h2>Contact Me</h2>
             <div className="form-container">
+            <h2 className="contact-me-h2">Contact Me</h2>
+            <div className="decorative-rectangle">
+
+                {/*Circle Rows and Column*/}
+                <div className="circle-row bottom-row">
+                    {bottomRowCircles.map((_, index) => (
+                        <div key={`bottom-row-circle-${index}`} className="circle"></div>
+                    ))}    
+                </div>    
+                <div className="circle-row second-bottom-row">
+                    {secondBottomRowCircles.map((_, index) => (
+                        <div key={`second-bottom-row-${index}`} className="circle"></div>
+                    ))}
+                </div> 
+                <div className="circle-column">
+                    {columnCircles.map((_, index) => (
+                        <div key={`circles-column-${index}`} className="circle"></div>
+                    ))}
+                </div>        
+            </div>
+            
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="form-group my-3">
                     <input 
@@ -86,7 +116,7 @@ return (
                   <h2 className="resume-h2">Resume</h2>
                     <div className="decorative-oval"></div>
                             <a href="/Resume.pdf"  download={"Sam Bolton's Resume"} className="download btn">
-                                Download My Resume
+                                Download 
                             </a>
             </div>
     </div>

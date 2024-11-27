@@ -4,7 +4,7 @@
     margin: auto; 
     display: flex; 
     justify-content: space-between; 
-    align-items: flex start;
+ 
 }
 
 .form-container {
@@ -12,16 +12,99 @@
     max-width: 50%; 
     background-color: #01190B;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center; 
     text-align: center; 
+    width:fit-content;
+    position: relative;
+    padding-top: 75px;
+    z-index: 1;
+}
+
+.form {  
+    position: relative;
+    margin-top: 130px;
+    width: 25%;
+    z-index: 1;
+
+}
+
+.form-control {
+    border-radius: 30px;
+}
+
+.form textarea::placeholder {
+padding-top: 10px;
+}
+
+.decorative-rectangle {
+    position: absolute;
+    top: 240px;
+    width: 275px;
+    height: 300px;
+    background-color:#253C2B ;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Circle Rows at Bottom Left Corner */
+.circle-row {
+    position: absolute;
+    display: flex;
+    gap: 12px;              
+    width: fit-content;
+    z-index: 2;              
+}
+
+.bottom-row {
+    bottom: -22px;          
+    left: 0px;
+}
+
+.second-bottom-row {
+    bottom: -45px;          
+    left: 0px;
+}
+
+/* Circle Column Going Up Vertically */
+.circle-column {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;              
+    height: fit-content;
+    z-index: 2;             
+    bottom: -45px;         
+    left: -25px;
+}
+
+/* Circle Styling */
+.circle-row::before,
+.circle-column::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #455E4F;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #455E4F;
+}
+
+
+.contact-me-h2 {
+font-size: 29px;
 }
 
 .resume-container {
     flex: 1; 
     display: flex;
-    flex-direction: column;  /* Layout children in a column */
-    align-items: center;     /* Center align horizontally */
+    flex-direction: column;  
+    align-items: center;    
     text-align: center;
     width: fit-content;
     text-align: center; 
@@ -29,11 +112,12 @@
     background-color: #455E4F;
     position: relative;
     padding-top: 75px;
+    
 
 }
 
 .resume-h2 {
-    margin-bottom: 20px;         /* Space between the title and the button */
+    margin-bottom: 20px;       
     font-size: 1.8rem; 
 }
 
@@ -42,8 +126,9 @@
     background-color: #C0FC95;
     color: black;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 35px;
     height: 50px;
+    width: 200px;
     transition: background-color 0.3s ease;
     z-index: 1; 
     margin-top: 245px; /*This value may need altering for responsive design*/
@@ -66,17 +151,24 @@
     pointer-events: none; 
 }
 
-.submit {
+.btn.submit {
     width: 100%;
+    background-color: #C0FC95;
+    color: black;
+    border-radius: 35px;
+    transition: background-color 0.3s ease;
 }
 
-
+.btn.submit:hover {
+    background-color: #c0fc95a8;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .contact-content {
         flex-direction: column; 
         align-items: center;
+        
     }
 
     .form-container, .resume-container {

@@ -51,7 +51,7 @@ function handleSubmit(e) {
 }
 
 return (
-    <div className="container-contact mb-5">
+    <div className="container-contact">
             <div className="form-container">
             <h2 className="contact-me-h2">Contact Me</h2>
             <div className="decorative-rectangle">
@@ -73,7 +73,7 @@ return (
                     ))}
                 </div>        
             </div>
-            
+
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="form-group my-3">
                     <input 

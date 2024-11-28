@@ -9,13 +9,12 @@
 
 .form-container {
     flex: 1; 
-    max-width: 50%; 
+    width: 100%;
     background-color: #01190B;
     display: flex;
     flex-direction: column;
     align-items: center; 
     text-align: center; 
-    width:fit-content;
     position: relative;
     padding-top: 75px;
     z-index: 1;
@@ -106,7 +105,7 @@ font-size: 29px;
     flex-direction: column;  
     align-items: center;    
     text-align: center;
-    width: fit-content;
+    width: 100%;
     text-align: center; 
     max-width: 50%; 
     background-color: #455E4F;
@@ -131,6 +130,7 @@ font-size: 29px;
     width: 200px;
     transition: background-color 0.3s ease;
     z-index: 1; 
+    padding-top: 10px;
     margin-top: 245px; /*This value may need altering for responsive design*/
 }
 .download.btn:hover {
@@ -143,8 +143,8 @@ font-size: 29px;
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     background-color: #051513;
     border-radius: 50%;
     z-index: 0;  
@@ -165,16 +165,46 @@ font-size: 29px;
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .contact-content {
+    .container-contact {
         flex-direction: column; 
         align-items: center;
+        height: 1325px;
+        width: 100%;
+    }
+       
+    .form-container {
+        padding-bottom: 150px; 
+        width: 100%;
+        flex: 1;
+        background-color: #01190B;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+        position: relative;
+        padding-top: 75px;
+        z-index: 1;
         
+    } 
+    .resume-container {
+        max-width: 100%; 
+        flex: 1; 
+        display: flex;
+        flex-direction: column;  
+        align-items: center;    
+        text-align: center;
+        text-align: center; 
+        background-color: #455E4F;
+        position: relative;
+        padding-top: 75px;
     }
-
-    .form-container, .resume-container {
-        max-width: 90%; 
-        margin-bottom: 20px;
+    .download.btn {
+        margin-top: 180px; /*This value may need altering for responsive design*/
     }
-
-   
+    .decorative-oval {
+        margin-top: 50px;
+    }
 }
+
+
+ 

@@ -1,0 +1,11 @@
+footer {
+    background-color: #445E4F;
+    height: 100%;
+    padding-top: 100px;
+    height: 300px;
+}
+
+p {
+    max-width: 100% !important;
+  }
+  

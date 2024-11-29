@@ -58,10 +58,10 @@ function handleSubmit(e) {
     //if newErrors is 0 then the form can be submitted
     if (Object.values(newErrors).length === 0) {
         emailjs.sendForm(
-            'YOUR_SERVICE_ID',        // Replace with your EmailJS service ID  service_9s8qi78     
-            'YOUR_TEMPLATE_ID',       // Replace with your EmailJS template ID contact_form_hjbdic8
-            '#form',             // Reference to the form element
-            'YOUR_USER_ID'            // Replace with your EmailJS user ID (public key)J1V_bF_plez24wEyL
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,           
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,     
+            form.current,            
+            process.env.REACT_APP_EMAILJS_USER_ID           
         )
         .then((response) => {
             console.log('SUCCESS!', response.status, response.text);

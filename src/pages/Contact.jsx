@@ -57,6 +57,9 @@ function handleSubmit(e) {
 
     //if newErrors is 0 then the form can be submitted
     if (Object.values(newErrors).length === 0) {
+        console.log("Service ID:", process.env.REACT_APP_EMAILJS_SERVICE_ID);
+        console.log("Template ID:", process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+        console.log("User ID:", process.env.REACT_APP_EMAILJS_USER_ID);
         emailjs.sendForm(
             process.env.REACT_APP_EMAILJS_SERVICE_ID,           
             process.env.REACT_APP_EMAILJS_TEMPLATE_ID,     

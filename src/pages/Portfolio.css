@@ -95,3 +95,13 @@
    }
 }
 
+@media (max-width: 1000px){
+  .container-project {
+    text-align: center;
+    align-items: center;
+  }
+  h2.title {
+    padding-left: 0;
+  }
+}
+

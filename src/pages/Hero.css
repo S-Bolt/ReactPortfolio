@@ -91,7 +91,7 @@
         line-height: 5.5rem !important;
     }
 
-    p {
+    .words p {
         line-height: 2rem;
     }
 }
@@ -154,6 +154,9 @@
 @media (max-width: 768px) {
     .words{
         padding-top: 60px;
+        text-align: center;
+        align-items: center;
+       
     }
    
     .headshot-img {
@@ -167,5 +170,15 @@
         height: .5rem;
         background-color: #d0d4d3;
         border: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .words h1 {
+        font-size: 3.5rem !important;
+        line-height: 3rem !important;
+    }
+    .words p {
+        
     }
 }

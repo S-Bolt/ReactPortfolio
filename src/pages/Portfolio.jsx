@@ -15,7 +15,7 @@ function Portfolio() {
     },
     {
         title: 'WeatherApp',
-        image: '/WeatherAppPhoto.png',
+        image: '/WeatherApp.png',
         deployedLink: 'https://s-bolt.github.io/Weather-Forecast/',
         githubLink: 'https://github.com/S-Bolt/Weather-Forecast',
 

@@ -14,6 +14,12 @@ function Portfolio() {
 
     },
     {
+        title: 'Quantico',
+        image: '/QuanticoWebsite.png',
+        deployedLink: 'https://quanticoharvest.onrender.com/',
+        githubLink: 'https://github.com/S-Bolt/quanticoHarvest',
+    },
+    {
         title: 'WeatherApp',
         image: '/WeatherApp.png',
         deployedLink: 'https://s-bolt.github.io/Weather-Forecast/',

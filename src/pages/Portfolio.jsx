@@ -5,6 +5,11 @@ import "./Portfolio.css";
 function Portfolio() {
   const projects = [
     {
+      title: "CLRizz",
+      image: "/CLRizz.png",
+      deployedLink: "https://cover-letter-creator-psi.vercel.app/",
+    },
+    {
       title: "The Bird Bath",
       image: "/birdbathsite.png",
       deployedLink: "https://thebirdbath-frontend.onrender.com/",
